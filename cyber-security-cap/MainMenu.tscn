@@ -1,0 +1,62 @@
+[gd_scene format=3 uid="uid://c6atavbyedlei"]
+
+[ext_resource type="Script" uid="uid://cfqey8ictiei3" path="res://play.gd" id="1_eiy7p"]
+[ext_resource type="Script" uid="uid://dohfyip4ajwkr" path="res://quit.gd" id="2_h7a2f"]
+
+[node name="Node2D" type="Node2D" unique_id=680575118]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=859568058]
+offset_right = 1152.0
+offset_bottom = 648.0
+color = Color(0.61404556, 0.6858456, 0.888153, 1)
+
+[node name="MainMenu" type="Control" parent="." unique_id=230262133]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="MainMenu" unique_id=238683571]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = 295.0
+offset_top = -17.999998
+offset_right = 438.35358
+offset_bottom = 5.000002
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(3.0832856, 3)
+text = "Security Manager"
+horizontal_alignment = 1
+justification_flags = 162
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MainMenu" unique_id=441566097]
+layout_mode = 0
+offset_left = 489.00003
+offset_top = 159.00002
+offset_right = 531.0
+offset_bottom = 225.0
+scale = Vector2(2.5466666, 1.3174886)
+
+[node name="PlayButton" type="Button" parent="MainMenu/VBoxContainer" unique_id=547122593]
+layout_mode = 2
+text = "Play"
+script = ExtResource("1_eiy7p")
+
+[node name="VBoxContainer2" type="VBoxContainer" parent="MainMenu" unique_id=1692086763]
+layout_mode = 0
+offset_left = 499.0
+offset_top = 264.00003
+offset_right = 541.0
+offset_bottom = 304.00003
+scale = Vector2(2.153605, 1.452072)
+
+[node name="QuitButton" type="Button" parent="MainMenu/VBoxContainer2" unique_id=1523708274]
+layout_mode = 2
+text = "Quit
+"
+script = ExtResource("2_h7a2f")
